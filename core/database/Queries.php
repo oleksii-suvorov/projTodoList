@@ -40,6 +40,7 @@ class Queries
             "DELETE FROM todo_list WHERE id=(%s)",
             $id
         );
+
         try {
             $statement = $this->pdo->prepare($query);
             $statement->execute();

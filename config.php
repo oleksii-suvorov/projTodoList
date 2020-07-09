@@ -1,10 +1,12 @@
 <?php
+require_once('vendor/autoload.php');
+\Dotenv\Dotenv::createImmutable(__DIR__)->load();
 
 return [
-  "host" => "mysql:host=sql7.freesqldatabase.com",
-    "dbname" => "sql7352662",
-    "username" => "sql7352662",
-    "password" => "kZXUNS1psg",
+  "host" => $_ENV["REMOTE_MYSQLDB_HOST"],
+    "dbname" => $_ENV["REMOTE_MYSQLDB_DBNAME"],
+    "username" => $_ENV["REMOTE_MYSQLDB_USERNAME"],
+    "password" => $_ENV["REMOTE_MYSQLDB_PWD"],
     "options" => [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]

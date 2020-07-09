@@ -1,9 +1,8 @@
 <?php
-
 use App\Core\{Router, Request};
 require "vendor/autoload.php";
 require 'core/bootstrap.php';
-require 'Todo.php';
+require 'core/Todo.php';
 
 $router = Router::load('app/routes.php');
 

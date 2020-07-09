@@ -2,7 +2,7 @@
 
 
 $router->get("", "PagesController@main");
-$router->get("oleskiys-todo.herokuapp.com/todos", "PagesController@todos");
+$router->get("todos", "PagesController@todos");
 $router->post("todos", "PagesController@store");
 $router->delete("todos/removeId", "PagesController@delete");
 $router->post("todos/done", "PagesController@setDone");

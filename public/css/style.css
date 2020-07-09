@@ -79,6 +79,12 @@ body {
 .title h1 {
     color: whitesmoke;
     text-transform: uppercase;
+    transition: 1s;
+}
+
+.title h1:hover {
+    cursor: pointer;
+    color: crimson;
 }
 
 .todos ul {
@@ -98,18 +104,25 @@ body {
     padding: 0 20px;
 }
 
+.empty {
+    border: none;
+}
+
 .todos ul li {
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition-duration: 0.6s;
+    transition-duration: 0.7s;
     cursor: pointer;
     opacity: 0.8;
 }
 
 .todos ul li span:hover {
-
+    color: crimson;
+}
+.todos ul li span {
+    transition: 0.6s;
 }
 
 .todos ul li:hover {
@@ -126,7 +139,6 @@ form {
     align-items: center;
     flex-direction: column;
     margin-top: 60px;
-
 }
 
 form input {
@@ -134,10 +146,9 @@ form input {
 }
 
 form button {
-    width: 7%;
+    width: 100px;
     height: 35px;
     border-radius: 10px;
-    border: none;
     background: rgb(24, 160, 201);
     color: white;
     border: 1px solid white;
@@ -165,13 +176,12 @@ form input:active {
 }
 
 form input:focus, textarea:focus, select:focus{
-
     outline: none;
-
 }
 
 .done {
     text-decoration-line: line-through;
+    color: darkgray;
 }
 
 .notdone {
