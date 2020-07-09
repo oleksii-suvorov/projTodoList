@@ -5,7 +5,8 @@ class Connection
     static function connect($config) {
         try {
             return $pdo = new PDO(
-                $config["host"].";dbname=".
+                $config["host"] . ";port=" .
+                $config["port"] ? $config["port"] : 3306 . ";dbname=".
                 $config["dbname"],
                 $config["username"],
                 $config["password"]
