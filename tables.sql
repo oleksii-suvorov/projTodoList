@@ -1,0 +1,7 @@
+CREATE DATABASE todos;
+USE todos;
+CREATE TABLE todo_list (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(50) NOT NULL UNIQUE,
+  isCompleted BOOLEAN DEFAULT false
+);
