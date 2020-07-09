@@ -10,7 +10,7 @@ sudo chmod +x ./SQLTableCreate.sh;
 Insert your user password and here we are, table should be created.
 
 
-2. Also you need to create .env file like this example to establish connection with your db:
+2. Also you need to fill .env file like this example to establish connection with your db:
 
 
 MYSQLDB_HOST=mysql:host=sql7.blablabla.com
