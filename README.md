@@ -1,12 +1,16 @@
 # projTodoList
 start2imp third project
 
-you may need to create .env file like this example to establish connection with your db:
+#you may use the file tables.sql to create tables
 
-REMOTE_MYSQLDB_HOST=mysql:host=sql7.blablabla.com
+#you may need to create .env file like this example to establish connection with your db:
 
-REMOTE_MYSQLDB_DBNAME=sql111111
+MYSQLDB_HOST=mysql:host=sql7.blablabla.com
 
-REMOTE_MYSQLDB_USERNAME=sq222222
+MYSQLDB_PORT=8080
 
-REMOTE_MYSQLDB_PWD=yourPassword
+MYSQLDB_DBNAME=todo_list
+
+MYSQLDB_USERNAME=$USER
+
+MYSQLDB_PWD=yourPassword
