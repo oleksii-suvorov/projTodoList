@@ -6,7 +6,7 @@ class Connection
         try {
             return $pdo = new PDO(
                 $config["host"] . ";port=" .
-                $config["port"] ? $config["port"] : 3306 . ";dbname=".
+                $config["port"] . ";dbname=".
                 $config["dbname"],
                 $config["username"],
                 $config["password"]
