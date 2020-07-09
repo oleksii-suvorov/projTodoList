@@ -3,10 +3,11 @@ require_once('vendor/autoload.php');
 \Dotenv\Dotenv::createImmutable(__DIR__)->load();
 
 return [
-  "host" => $_ENV["REMOTE_MYSQLDB_HOST"],
-    "dbname" => $_ENV["REMOTE_MYSQLDB_DBNAME"],
-    "username" => $_ENV["REMOTE_MYSQLDB_USERNAME"],
-    "password" => $_ENV["REMOTE_MYSQLDB_PWD"],
+  "host" => $_ENV["MYSQLDB_HOST"],
+    "dbname" => $_ENV["MYSQLDB_DBNAME"],
+    "username" => $_ENV["MYSQLDB_USERNAME"],
+    "password" => $_ENV["MYSQLDB_PWD"],
+    "port" => $_ENV["MYSQLDB_PORT"]
     "options" => [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]
