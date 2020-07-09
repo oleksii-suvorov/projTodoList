@@ -1,17 +1,20 @@
 # projTodoList
 start2imp third project
 
-1. Works on Linux, just type commands: 
+# Works on Linux: 
 
 git clone https://github.com/oleksii-suvorov/projTodoList.git;
+
 cd projTodoList/;
+
 sudo chmod +x autorun.sh;
+
 ./autorun.sh;
 
-insert few passwords, including db password and username, then open browser: localhost:8080
+insert a couple of times your local password, then db password and db username, then open browser: localhost:8080
 
 
-2. Or you may want separately use files SQLTableCreate.sh and tables.sql to create tables on your local machine (already made in autorun.sh script), so just install mySQL locally and type commands:
+1. Or you may want separately only create tables using files SQLTableCreate.sh and tables.sql on your local machine (already made in autorun.sh script), so just install mySQL locally and type commands:
 
 sudo chmod +x ./SQLTableCreate.sh;
 ./SQLTableCreate.sh
@@ -19,7 +22,7 @@ sudo chmod +x ./SQLTableCreate.sh;
 Insert your user password and here we are, table should be created.
 
 
-2. Also you optionally can fill .env file like this example to establish connection with your db (already made in autorun.sh script):
+2. Also optionally you may want fill out .env file to establish connection with your remote db (local db has been already established by autorun.sh script) like here:
 
 
 MYSQLDB_HOST=mysql:localhost or MYSQLDB_HOST=mysql:host=sql7.blablabla.com (in case if DB is remote)
