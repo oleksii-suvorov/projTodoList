@@ -3,10 +3,10 @@ sudo chmod +x ./SQLTableCreate.sh;
 ./SQLTableCreate.sh;
 echo -e "Insert your local DATABASE password: \c";
 read PWD;
-sed -i "/MYSQLDB_USERNAME=/c\MYSQLDB_USERNAME=$USER" ./.env;
-echo -e "Insert your local DATABASE password: \c";
+sed -i "/MYSQLDB_PWD=/c\MYSQLDB_PWD=$PWD" ./.env;
+echo -e "Insert your local DATABASE username: \c";
 read USERNAME;
-sed -i "/MYSQLDB_USERNAME=/c\MYSQLDB_PWD=$USERNAME" ./.env;
+sed -i "/MYSQLDB_USERNAME=/c\MYSQLDB_USERNAME=$USERNAME" ./.env;
 ~/composer/composer.phar install;
 RESULT=$?
 
